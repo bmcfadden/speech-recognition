@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81L-hX-ZxA">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTh-2D-Zy3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8sv-Zm-gT0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Last Speech Detected:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlr-YX-trM">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="JJ1-Wg-P0J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="iTh-2D-Zy3" firstAttribute="top" secondItem="Zlr-YX-trM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Aud-ER-tR1"/>
+                            <constraint firstItem="Zlr-YX-trM" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Fzv-9h-jcE"/>
+                            <constraint firstAttribute="trailing" secondItem="Zlr-YX-trM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SDj-d1-mhG"/>
+                            <constraint firstAttribute="trailing" secondItem="iTh-2D-Zy3" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bHf-Ks-uQJ"/>
+                            <constraint firstItem="81L-hX-ZxA" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="ivg-NO-3bC"/>
+                            <constraint firstItem="81L-hX-ZxA" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="jnP-1H-Qw3"/>
+                            <constraint firstItem="iTh-2D-Zy3" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="kth-Lf-4fC"/>
+                            <constraint firstAttribute="bottom" secondItem="iTh-2D-Zy3" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="nSZ-Ml-5VG"/>
+                            <constraint firstItem="81L-hX-ZxA" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="unV-8g-zd9"/>
+                            <constraint firstItem="81L-hX-ZxA" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="vIN-a3-gIo"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hkK-Cs-hGP" appends="YES" id="4hZ-1g-isP"/>
+                            <outletCollection property="gestureRecognizers" destination="N5z-ko-Wd3" appends="YES" id="jyH-nF-raC"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="recognizedSpeechLabel" destination="iTh-2D-Zy3" id="Do4-EA-rGQ"/>
+                        <outlet property="speechPromptTextView" destination="81L-hX-ZxA" id="cFe-0K-BYN"/>
+                        <outlet property="speechStatusLabel" destination="Zlr-YX-trM" id="tDw-n3-hVW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="hkK-Cs-hGP" userLabel="Swipe Gesture Recognizer Right">
+                    <connections>
+                        <action selector="swipeGestureRight:" destination="2" id="eU9-SR-U9i"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="N5z-ko-Wd3" userLabel="Swipe Gesture Recognizer Left">
+                    <connections>
+                        <action selector="swipeGestureLeft:" destination="2" id="7lp-UU-MeD"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="swipeGestureLeft:"/>
+                <relationship kind="action" name="swipeGestureRight:"/>
+                <relationship kind="outlet" name="recognizedSpeechLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="speechPromptTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="speechStatusLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
