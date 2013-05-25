@@ -50,7 +50,7 @@
                                    [[Command alloc] initWithCommand:@"ONLINE" ofType:CommandTypeAvailable],
                                    [[Command alloc] initWithCommand:@"CONNECT WITH" ofType:CommandTypeConnectTo],
                                    [[Command alloc] initWithCommand:@"NO THANK YOU" ofType:CommandTypeNegative],
-                                   [[Command alloc] initWithCommand:@"PLAY MESSAGE" ofType:CommandTypePlayMessage],
+                                   [[Command alloc] initWithCommand:@"PLAY NEXT MESSAGE" ofType:CommandTypePlayMessage],
                                    [[Command alloc] initWithCommand:@"SEND MESSAGE" ofType:CommandTypeSendMessageTo],
                                    nil];
     
