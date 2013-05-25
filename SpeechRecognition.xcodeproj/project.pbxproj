@@ -24,8 +24,6 @@
 		DD0C52431742B32300BB22CB /* SpeechManager+Recognition.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0C52421742B32300BB22CB /* SpeechManager+Recognition.m */; };
 		DD0C524917434E2200BB22CB /* SpeechManager+Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0C524817434E2200BB22CB /* SpeechManager+Parser.m */; };
 		DD0C524F1743F19900BB22CB /* LanguageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0C524E1743F19900BB22CB /* LanguageModel.m */; };
-		DD5C6200174DC7EF009B3067 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C61FF174DC7EF009B3067 /* Word.m */; };
-		DD5C6203174DD5D4009B3067 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C6202174DD5D4009B3067 /* Command.m */; };
 		DD7E81321745BCDE00AA08CA /* cmu07a.dic in Resources */ = {isa = PBXBuildFile; fileRef = DD7E81221745BCDE00AA08CA /* cmu07a.dic */; };
 		DD7E81331745BCDE00AA08CA /* feat.params in Resources */ = {isa = PBXBuildFile; fileRef = DD7E81241745BCDE00AA08CA /* feat.params */; };
 		DD7E81341745BCDE00AA08CA /* mdef in Resources */ = {isa = PBXBuildFile; fileRef = DD7E81251745BCDE00AA08CA /* mdef */; };
@@ -41,6 +39,8 @@
 		DD7E813E1745BCDE00AA08CA /* OpenEars2.gram in Resources */ = {isa = PBXBuildFile; fileRef = DD7E812F1745BCDE00AA08CA /* OpenEars2.gram */; };
 		DD7E813F1745BCDE00AA08CA /* OpenEarsCorpus.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD7E81301745BCDE00AA08CA /* OpenEarsCorpus.txt */; };
 		DD7E81401745BCDE00AA08CA /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7E81311745BCDE00AA08CA /* Slt.framework */; };
+		DDF3ED251750397F00D2E150 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF3ED221750397F00D2E150 /* Command.m */; };
+		DDF3ED261750397F00D2E150 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF3ED241750397F00D2E150 /* Word.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,10 +70,6 @@
 		DD0C524817434E2200BB22CB /* SpeechManager+Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SpeechManager+Parser.m"; sourceTree = "<group>"; };
 		DD0C524D1743F19900BB22CB /* LanguageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageModel.h; sourceTree = "<group>"; };
 		DD0C524E1743F19900BB22CB /* LanguageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageModel.m; sourceTree = "<group>"; };
-		DD5C61FE174DC7EF009B3067 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Word.h; path = "../../../../dev-ios/perch/SpeechRecognition/SpeechRecognition/Word.h"; sourceTree = "<group>"; };
-		DD5C61FF174DC7EF009B3067 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Word.m; path = "../../../../dev-ios/perch/SpeechRecognition/SpeechRecognition/Word.m"; sourceTree = "<group>"; };
-		DD5C6201174DD5D4009B3067 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Command.h; path = "../../../../dev-ios/perch/SpeechRecognition/SpeechRecognition/Command.h"; sourceTree = "<group>"; };
-		DD5C6202174DD5D4009B3067 /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Command.m; path = "../../../../dev-ios/perch/SpeechRecognition/SpeechRecognition/Command.m"; sourceTree = "<group>"; };
 		DD7E81221745BCDE00AA08CA /* cmu07a.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmu07a.dic; sourceTree = "<group>"; };
 		DD7E81241745BCDE00AA08CA /* feat.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = feat.params; sourceTree = "<group>"; };
 		DD7E81251745BCDE00AA08CA /* mdef */ = {isa = PBXFileReference; lastKnownFileType = file; path = mdef; sourceTree = "<group>"; };
@@ -89,6 +85,10 @@
 		DD7E812F1745BCDE00AA08CA /* OpenEars2.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars2.gram; sourceTree = "<group>"; };
 		DD7E81301745BCDE00AA08CA /* OpenEarsCorpus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEarsCorpus.txt; sourceTree = "<group>"; };
 		DD7E81311745BCDE00AA08CA /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		DDF3ED211750397F00D2E150 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		DDF3ED221750397F00D2E150 /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		DDF3ED231750397F00D2E150 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		DDF3ED241750397F00D2E150 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +178,8 @@
 		DD0C520B1742A79200BB22CB /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				DDF3ED211750397F00D2E150 /* Command.h */,
+				DDF3ED221750397F00D2E150 /* Command.m */,
 				DD0C524D1743F19900BB22CB /* LanguageModel.h */,
 				DD0C524E1743F19900BB22CB /* LanguageModel.m */,
 				DD0C524717434E2200BB22CB /* SpeechManager+Parser.h */,
@@ -186,10 +188,8 @@
 				DD0C52421742B32300BB22CB /* SpeechManager+Recognition.m */,
 				DD0C52381742AAC200BB22CB /* SpeechManager.h */,
 				DD0C52391742AAC200BB22CB /* SpeechManager.m */,
-				DD5C6201174DD5D4009B3067 /* Command.h */,
-				DD5C6202174DD5D4009B3067 /* Command.m */,
-				DD5C61FE174DC7EF009B3067 /* Word.h */,
-				DD5C61FF174DC7EF009B3067 /* Word.m */,
+				DDF3ED231750397F00D2E150 /* Word.h */,
+				DDF3ED241750397F00D2E150 /* Word.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -319,8 +319,8 @@
 				DD0C52431742B32300BB22CB /* SpeechManager+Recognition.m in Sources */,
 				DD0C524917434E2200BB22CB /* SpeechManager+Parser.m in Sources */,
 				DD0C524F1743F19900BB22CB /* LanguageModel.m in Sources */,
-				DD5C6200174DC7EF009B3067 /* Word.m in Sources */,
-				DD5C6203174DD5D4009B3067 /* Command.m in Sources */,
+				DDF3ED251750397F00D2E150 /* Command.m in Sources */,
+				DDF3ED261750397F00D2E150 /* Word.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
